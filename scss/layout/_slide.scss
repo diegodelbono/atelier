@@ -1,0 +1,124 @@
+$slide-margin: 0 0 5rem 0;
+$slide-height: 85vh;
+
+.slide {
+   border: 3px solid violet;
+   position: relative;
+   height: 100vh;
+   //margin: $slide-margin;   
+   overflow: hidden;
+
+   @include small {
+      margin: 0 0 1rem 0;
+   }
+
+   &__container {
+      display: flex;
+   }
+
+   &__link {
+      display: block;
+      position: relative;
+      
+      &:hover, &:focus {
+         opacity: 0.75;
+      }
+   }
+
+   &__video {
+      @include position (absolute, $height: 100%, $top: 0);      
+   }
+}
+
+.slide--journal {
+   .slide__item {
+      h2 {
+         @include position(absolute, $top: 50%, $left: 50%);
+         font-size: 40px;
+         transform: translate(-50%, -50%);
+         text-align: center;
+
+         @include small () {
+            font-size: 20px;
+         }
+      }
+   }
+}
+
+.owl-dots {
+   display: none;
+}
+
+
+.owl-nav {
+   .owl-prev,
+   .owl-next {
+      background: $primary !important;
+      @include position (absolute, $top: 0, $height: 100%, $width: 1rem);
+
+      @include small {
+         width: 1rem;
+      }    
+
+      span {
+         display: none;
+      }
+   }
+
+   .owl-prev {
+      left: -3rem;
+      @include mask('../assets/app/i--prev.svg');
+      @include small {
+         left: 1rem;
+      }
+   }
+
+   .owl-next {
+      right: -3rem;
+      @include mask('../assets/app/i--next.svg');
+      @include small {
+         right: 1rem;
+      }
+   }
+}
+
+.slide--black {
+   position: relative;
+   .owl-nav {
+      .owl-next,
+      .owl-prev {
+         background: $primary !important;
+         width: 1.25rem;
+      }
+   }
+}
+
+.slick-arrow {
+   background: $primary !important;
+   width: 1rem;
+
+   &.slick-prev {
+      //border: 2px solid orange;
+      @include mask('../assets/app/i--prev.svg');
+   }
+
+   &.slick-next {
+      //border: 2px solid blue;
+      @include mask('../assets/app/i--next.svg');
+   }
+}
+
+#sbi_images {
+   display: flex;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px;
+
+   .sbi_item {
+      flex: 1;
+      width: auto !important;
+
+      img {
+         display: block !important;
+      }
+   }
+}

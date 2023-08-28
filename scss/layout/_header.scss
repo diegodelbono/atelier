@@ -1,0 +1,38 @@
+// $header-height: 8rem;
+// $header-height-sm: 3rem;
+// $header-padding: 1.5rem 0;
+// $header-padding-sm: 1rem 0;
+// $header-fixed-background: rgba(white, 0.5);
+
+.header {
+  padding: 1rem 0;
+}
+
+// .header {
+//   @include position(absolute, $top: 0, $height: $header-height, $width: 100%);
+//   padding: $header-padding;
+//   z-index: 7;
+//   position: relative;
+//   border: 3px solid orange;
+
+//   &__container {
+//     @include flex(center, space-between);
+//   }
+
+//   &__item {
+//     width: 100%;
+//   }
+
+//   @include medium {
+//     padding: $header-padding-sm;
+//   }
+
+//   &--fixed {
+//     background: $header-fixed-background;
+//     position: fixed;
+//   }
+
+//   @include small {
+//     height: $header-height-sm;
+//   }
+// }

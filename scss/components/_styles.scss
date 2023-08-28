@@ -1,0 +1,538 @@
+// .footer .nav--footer li {
+//    margin-bottom: 5px;
+//    text-transform: uppercase;
+// }
+
+// @media (min-width: 600px) {
+//    .footer__item {
+//       margin: 0 15rem 0 0;
+//       letter-spacing: 0.4px;
+//    }
+// }
+
+// .home .figure-hover .figure-hover__secondary {
+//    display: block;
+// }
+
+// .home .figure-hover:hover .figure-hover__primary {
+//    opacity: 0;
+// }
+
+// .home .figure-hover:hover .figure-hover__secondary {
+//    opacity: 1;
+// }
+
+// .owl-nav {
+//    display: block !important;
+// }
+
+// .product-single__gallery {
+//    margin: 2rem 0;
+// }
+
+// .product-single__gallery img {
+//    padding: 10px;
+//    height: 520px;
+//    width: auto !important;
+// }
+
+// @media (max-width: 600px) {
+//    .product-single__gallery img {
+//       height: 125px;
+//       width: auto !important;
+//    }
+// }
+
+// .product-single__price .cart {
+//    display: flex;
+//    justify-content: space-between;
+// }
+
+// .product-single__price .cart .button {
+//    background: white;
+//    border: white;
+//    color: black;
+// }
+
+// .product-single__price .cart+.price {
+//    margin-top: 10px;
+//    position: relative;
+// }
+
+// .product-single__price .variations_form {
+//    display: block;
+// }
+
+// .product-article__caption {
+//    //border: 2px solid red;
+//    bottom: -2rem;
+//    //position: relative
+// }
+
+// .video {
+//    width: 100% !important;
+// }
+
+// // .tabs {
+// //    border: 2px solid grey;
+// // }
+
+// // .tab__nav {
+// //    align-items: center;
+// //    align-content: center;
+// //    display: flex;
+// //    border-top: 1px solid #9d9d9d;
+// //    border-bottom: 1px solid #9d9d9d;
+// //    border-bottom: 2px solid black;
+// //    padding: 1rem 0;
+// //    margin: 2rem 0;
+// //    cursor: pointer;
+// // }
+
+// // .tab__item {
+// //    margin-right: 2rem;
+// //    text-transform: uppercase;
+// //    text-decoration: none;
+// //    transition: all 0.5s ease;
+// //    -moz-transition: all 0.5s ease;
+// //    -ms-transition: all 0.5s ease;
+// //    -webkit-transition: all 0.5s ease;
+// //    border-bottom: 1px solid transparent;
+// // }
+
+// // .tab__item:hover,
+// // .tab__item:focus {
+// //    border-color: #000;
+// // }
+
+// // .tab__item.active {
+// //    border-bottom: 1px solid #000;
+// // }
+
+// // .tab__item:last-child {
+// //    margin-left: auto;
+// //    margin-right: 0;
+// // }
+
+// // .tab__item.active:last-child {
+// //    border: none;
+// // }
+
+// // .tab__item .button--border {
+// //    border: 1px solid black;
+// //    padding: 0.125rem 0.5rem;
+// //    line-height: 1.25;
+// // }
+
+// // .tab__item:last-child {
+// //    border: none !important;
+// // }
+
+// // .tab__item.active:last-child .button--border {
+// //    background: black;
+// //    color: white;
+// // }
+
+// // .tab__content {
+// //    display: none;
+// // }
+
+// // .tab__content.active {
+// //    display: block;
+// // }
+
+// .single_add_to_cart_button,
+// .quantity {
+//    display: none !important;
+// }
+
+// .form-box--inline {
+//    display: flex;
+//    margin-bottom: 1rem;
+
+//    p {
+//       width: 100%;
+//    }
+// }
+
+// .form-box--inline label {
+//    //border: 2px solid orange;
+//    flex-basis: 10rem;
+//    text-transform: uppercase;
+// }
+
+// .form-box--inline input {
+//    border-bottom: 1px solid black;
+//    width: 100%;
+//    outline: none;
+// }
+
+// .form-box--inline textarea {
+//    border: 1px solid black;
+//    outline: none;
+//    padding: 0.5rem;
+//    width: 100%;
+// }
+
+// // .button--border {
+// //    border: 1px solid black;
+// //    background: transparent;
+// //    color: black;
+// //    padding: 0.25rem 0.75rem;
+// // }
+
+// // .form-box--inline .button--border {
+// //    margin-left: 8rem;
+// //    width: auto;
+// // }
+
+// .product-single__content .price,
+// .product-single__content .price * {
+//    //border: 2px solid red;
+//    font-size: 13px;
+// }
+
+// .product-single__price .price {
+//    position: relative !important;
+//    margin: 0 !important;
+//    display: none;
+// }
+
+// .product-single__price .woocommerce-variation-price .price {
+//    display: block;
+//    //border: 2px solid red;
+//    text-align: right;
+//    font-weight: 700;
+// }
+
+// .product-single__content--description {
+//    display: flex;
+//    //border: 2px solid red;
+//    justify-content: space-between;
+// }
+
+// .product-single__content--description p {
+//    margin: 0;
+// }
+
+// .tab__item--mobile {
+//    display: none;
+// }
+
+// // @media (max-width: 1200px) {
+// //    .tab__nav {
+// //       justify-content: space-between;
+// //    }
+
+// //    .tab__item {
+// //       margin: 0 !important;
+// //    }
+// // }
+
+// @media (max-width: 1024px) {
+//    // .tab {
+//    //    margin: 2rem 0;
+//    //    border-top: 1px solid #9d9d9d;
+//    //    border-bottom: 1px solid #9d9d9d;
+//    //    padding: 1rem 0;
+//    // }
+
+//    // .tab__item--mobile {
+//    //    display: block;
+//    //    padding: 0.5rem 0;
+//    //    width: max-content;
+//    // }
+
+//    // .tab__content {
+//    //    margin: 1rem 0;
+//    // }
+
+//    // .tab__nav {
+//    //    display: none;
+//    // }
+
+//    .form-box--inline {
+//       flex-direction: column;
+//    }
+
+//    .form-box--inline label {
+//       flex-basis: auto;
+//    }
+
+//    .variations tr {
+//       display: block;
+//       height: auto;
+//    }
+
+//    .variations tr td {
+//       margin: 0 !important;
+//       display: block;
+//       width: 100%;
+//       height: 100% !important;
+//    }
+
+//    .variations tr td.label {
+//       padding-bottom: 0.5rem;
+//    }
+
+// }
+
+// .variations tr {
+//    margin-bottom: 1.5rem;
+// }
+
+// .variations tr td {
+//    align-items: center;
+// }
+
+// .variations tr td.label {
+//    display: flex;
+// }
+
+// .variations tr label {
+//    font-weight: 400 !important;
+//    width: 110px;
+// }
+
+// .woo-selected-variation-item-name {
+//    display: none !important;
+// }
+
+// .color-variable-item,
+// .image-variable-item {
+//    padding: 0 !important;
+//    box-shadow: none !important;
+//    border-radius: 50% !important;
+//    overflow: hidden;
+// }
+
+// .color-variable-item.selected,
+// .image-variable-item.selected {
+//    border: 2px solid black !important;
+// }
+
+// .variable-item-contents:before {
+//    display: none !important;
+// }
+
+// .button-variable-item {
+//    background: transparent !important;
+//    padding: 0 !important;
+//    border-radius: 0 !important;
+//    box-shadow: none !important;
+//    margin: 0.25rem 0.5rem 0.5rem 0 !important;
+//    height: 20px !important;
+//    text-transform: lowercase;
+//    border-bottom: 2px solid transparent;
+// }
+
+// .button-variable-item.selected {
+//    border-bottom: 2px solid black;
+// }
+
+// .wpcf7-response-output {
+//    border: none !important;
+//    color: #747474;
+//    margin-left: 8rem !important;
+//    padding: 0 !important;
+// }
+
+// .button-variable-item span {
+//    padding: 0 !important;
+// }
+
+// .variations .label {
+//    width: 120px !important;
+//    display: block;
+//    text-align: left;
+// }
+
+// .variations .value {
+//    width: 100% !important;
+// }
+
+// .product-single .product-single__title {
+//    margin-bottom: 2rem;
+// }
+
+// .wpcf7-form-control-wrap {
+//    width: 100%;
+// }
+
+// .product-single__content--spec li {
+//    margin-bottom: 1rem;
+// }
+
+// .product-single__content--spec li a:hover {
+//    color: black;
+//    text-decoration: underline;
+// }
+
+// .wpcf7-checkbox {
+//    display: flex;
+// }
+
+// .wpcf7-checkbox .wpcf7-list-item {
+//    margin: 0 1rem 0 0;
+// }
+
+// .wpcf7-checkbox .wpcf7-list-item label {
+//    display: flex;
+// }
+
+// .wpcf7-checkbox .wpcf7-list-item label input {
+//    margin-right: 0.5rem;
+// }
+
+// .wpcf7-checkbox .wpcf7-list-item label span {
+//    text-transform: initial;
+// }
+
+// .variable-items-wrapper {
+//    position: relative;
+//    margin: 0 !important;
+//    gap: 0.5rem;
+// }
+
+// .variable-items-wrapper .variable-item {
+//    margin: 0 !important;
+// }
+
+// .js-title-product {
+//    color: #747474;
+//    position: absolute;
+//    right: 0;
+//    top: 0;
+// }
+
+// .product-single__details .variations th,
+// .product-single__details .variations td {
+//    height: 50px;
+//    padding: 1rem 0;
+//    //border: 2px solid red;
+//    // margin: 1rem 0;
+// }
+
+// @include large () {
+//    .product-single__details .variations th {
+//       height: auto;
+//       padding: 0;
+//    }
+// }
+
+// .woo-variation-swatches .variable-items-wrapper {
+//    padding-right: 100px;
+// }
+
+// .hide {
+//    display: none;
+// }
+
+// .logo {
+//    //border: 2px solid orange;
+//    width: initial;
+// }
+
+// .logo__container {
+//    background: url("https://atelierdetroupe.com/wp-content/uploads/2022/10/ADT_Logo.png") no-repeat center center;
+//    background-size: contain;
+//    height: 80px;
+//    //width: 300px;
+//    display: block;
+// }
+
+// .logo__container img {
+//    display: none;
+// }
+
+// @media (max-width: 768px) {
+//    .main {
+//       padding: 6rem 0 0 0 !important;
+//    }
+
+//    .logo__container {
+//       height: 60px;
+//    }
+// }
+
+// .accordion-sm {
+//    //border: 2px solid red;
+// }
+
+// .accordion-sm__header {
+//    cursor: pointer;
+//    //border: 2px solid blue;
+//    display: flex;
+//    align-items: center;
+//    //padding-left: 1rem;
+// }
+
+// .accordion-sm__header h3 {
+//    margin: 0;
+// }
+
+// .accordion-sm__header:before {
+//    content: "+";
+//    width: 0.75rem;
+//    margin-right: 1rem;
+//    text-align: center;
+
+// }
+
+// .accordion-sm__header--active:before {
+//    content: "-";
+//    margin-right: 1rem;
+//    //border: 2px solid red;
+
+// }
+
+// .accordion-sm__item {
+//    padding-bottom: 0.5rem;
+// }
+
+// .accordion-sm__content {
+//    //border: 2px solid orange;
+//    padding: 0.5rem 0;
+//    margin-left: 1.75rem;
+//    //margin-bottom: 1rem;
+// }
+
+// .accordion-sm__content p:last-child {
+//    margin: 0;
+// }
+
+// .product__thumb {
+//    height: 100%;
+//    //background: red !important;
+// }
+
+// .product__thumb img {
+//    object-fit: cover;
+// }
+
+// .product__thumb .thumb--hover {
+//    height: 100% !important;
+// }
+
+// .product__item {
+//    height: 100%;
+//    //background: orange;
+// }
+
+// .product__caption {
+//    //display: none !important;
+// }
+
+// .product__thumb img {
+//    object-fit: cover !important;
+//    height: 100% !important;
+// }
+
+// .products li {
+//    margin-bottom: 60px !important;
+// }
+
+// .price,
+// .product__caption--price {
+//    display: none !important;
+// }

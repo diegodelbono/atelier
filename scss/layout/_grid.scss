@@ -1,0 +1,45 @@
+$container-gutters: 0 4rem;
+$container-gutters-sm: 0 1rem;
+
+.container {
+   padding: $container-gutters;
+   margin: 0 auto;
+   max-width: 115rem;
+   @include small {
+      padding: $container-gutters-sm;
+   }
+}
+
+.grid-product {
+   margin: 80px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;   
+
+   @include small {
+      margin: 40px 0 0 0;
+   }
+}
+
+.section-instagram {   
+   &__list {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(3, 1fr);
+
+      @include small () {
+         grid-gap: 20px;
+      }
+   }
+
+   &__link{
+      margin: 1rem 0;
+      display: block;
+      text-align: right;
+      text-transform: uppercase;
+
+      @include small {
+         font-size: 13px;
+      }
+   }
+}

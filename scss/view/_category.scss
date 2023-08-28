@@ -1,0 +1,41 @@
+.content-category {
+  //border: 2px solid red;
+  display: flex;
+
+  &__sidebar {
+    position: sticky;
+    top: 50px;
+    height: 100%;
+    flex: 0 0 20%;
+    padding-right: 2rem;
+
+    @include large {
+      border: 2px solid blue;
+      // display: none;
+    }
+
+    @include medium {
+      border: 2px solid red;
+      // display: none;
+    }
+
+    @include small {
+      border: 2px solid green;
+      display: none;
+      // display: none;
+    }
+  }
+
+  // @include small {
+  //   //  border: 3px solid green;
+  //     flex-direction: column;
+  //    // padding: $container-gutters-sm;
+  //  }
+}
+
+
+
+// * {
+//     overflow: hidden;
+//     border: 2px solid red;
+// }

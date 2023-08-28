@@ -1,0 +1,46 @@
+$accordion-header-border:  1px solid $primary;
+$accordion-header-padding: 1rem 0;
+$accordion-header-font-size: $font-size-base;
+$accordion-content-width: 50%;
+$accordion-content-width-sm: 100%;
+$accordion-content-font-size: $font-size-base-sm;
+
+.accordion{
+   
+   &__header{
+      @include flex(center, space-between);
+      border-bottom: $accordion-header-border;
+      cursor: pointer;
+      position: relative;      
+      padding: $accordion-header-padding;
+
+      h2{
+         @include transition (all 0.5s ease);
+         font-size: $accordion-header-font-size;
+         margin: 0;         
+      }
+
+      &:after{
+         content: '+';
+      }
+
+      &--active{
+         &:after{
+            content: '-';
+         }
+      }
+   }
+
+   &__content{
+      display: none;
+      width: $accordion-content-width;
+
+      * {
+         font-size: $accordion-content-font-size;
+      }
+
+      @include small () {
+         width: $accordion-content-width-sm;
+      }      
+   }
+}

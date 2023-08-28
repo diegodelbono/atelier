@@ -1,0 +1,40 @@
+*{
+   color: $primary;
+   font: {
+      family: $font-family-base;
+      size: $font-size-base;
+      weight: $font-weight-regular;
+   }
+   letter-spacing: 0.25px;
+}
+
+h1, h2, h3{
+   font: {
+      size: $font-size-titles;
+      weight: $font-weight-regular;
+   }
+   margin-bottom: 1rem;
+   line-height: 1;
+   text-transform: uppercase;
+}
+
+h3 {
+   font-size: 15px;
+}
+
+p{
+   margin-bottom: 1rem;
+   font-size: $font-size-base-sm;
+}
+
+a{
+   text-decoration: none;
+   @include transition (all 0.5s ease);
+   &:hover, &:focus{
+      color: $secondary;
+   }
+}
+
+strong *, .strong * {
+   font-weight: 700;
+}

@@ -1,0 +1,68 @@
+$woocommerce-info-border-color: $primary;
+$woocommerce-info-border-height: 1px;
+$woocommerce-info-margin: 2rem 0;
+$woocommerce-info-padding: 1rem 0;
+
+.woocommerce-info,
+.woocommerce-message {
+   border-bottom:  $woocommerce-info-border-height solid $woocommerce-info-border-color;
+   border-top:     $woocommerce-info-border-height solid $woocommerce-info-border-color;
+   margin:         $woocommerce-info-margin;
+   padding:        $woocommerce-info-padding;
+   text-align:     center;
+   text-transform: uppercase;
+
+   .button {
+      @extend .button-secondary;
+      @extend .button-small;
+      float: right;
+   }
+
+}
+
+.woocommerce-result-count,
+.woocommerce-ordering {
+   display: none;
+}
+
+// Variaton
+.variation {
+   display: block;
+   text-align: left;
+   width: 100%;
+
+   dt {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+   }
+
+   dd {
+
+      p {
+         margin: 0;
+         font-size: 13px;
+      }
+   }
+}
+
+
+// Pagination
+.woocommerce-pagination {
+   @include flex(center, center);
+
+   .page-numbers{
+      display: flex;
+      .page-numbers {
+         cursor: pointer;
+         margin: 0 0.25rem;
+         &.current{
+            color: grey;
+         }
+      }
+   }
+}
+
+.woocommerce-product-gallery__trigger {
+   display: none;
+ }

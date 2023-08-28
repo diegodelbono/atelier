@@ -1,0 +1,26 @@
+// Colors
+$black: #000;
+$grey: #C1BEB8;
+
+$primary: $black;
+$secondary: $grey;
+
+$error: red;
+
+// Fonts
+$font-family-base: 'BrownStdRegular', sans-serif;
+
+$font-size-base: 16px;
+$font-size-base-sm: 13px;
+$font-size-base-md: 15px;
+$font-size-titles: 20px;
+$font-weight-regular: 400;
+
+// breakpoint
+$large: 1025px;
+$medium: 769px;
+$small: 640px;
+
+// Grid
+$gutters: 1.25rem;
+$gutters-sm: 1rem;

@@ -1,0 +1,40 @@
+// Variables
+$icon-color: $primary;
+$icon-hover-color: $secondary;
+
+$icon-height: 1rem;
+$icon-width: 1rem;
+
+$icon-height-lg: 1.5rem;
+$icon-width-lg: 1.5rem;
+
+.i{
+   @include transition (all 0.5s ease);
+   background: $icon-color;
+   height: $icon-height;
+   width:  $icon-width;
+   cursor: pointer;
+   display: block;    
+   text-indent: -9999px;    
+
+   &--lg {
+      height: $icon-height-lg;
+      width:  $icon-width-lg;
+   }
+
+   &:hover, &:focus{
+      background: $icon-hover-color;
+   }
+
+   &--cart{    @include mask('../assets/app/i--cart.svg'); }
+   &--user{    @include mask('../assets/app/i--user.svg'); }
+   &--search{  @include mask('../assets/app/i--search.svg'); }
+   &--cross{   @include mask('../assets/app/i--cross.svg'); }
+   
+   // Social
+   &--ig{    @include mask('../assets/social/i--ig.svg'); }
+   &--ps{    @include mask('../assets/social/i--ps.svg'); }
+ 
+}
+ 
+ 

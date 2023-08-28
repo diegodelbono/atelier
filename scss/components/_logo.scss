@@ -1,0 +1,13 @@
+$logo-width: 4.5rem;
+$logo-width-sm: 3rem;
+
+.logo{
+   margin: auto;
+   width: $logo-width;
+
+   @include medium {
+      margin-top: -0.25rem;
+      width: $logo-width-sm;
+   }
+}
+

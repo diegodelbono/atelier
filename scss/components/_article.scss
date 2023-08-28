@@ -1,0 +1,59 @@
+$article-font: 1.5rem;
+$article-font-sm: $font-size-base;
+$article-img-height: 600px;
+
+.product-article {
+   display: flex;
+   width: 49%;
+   position: relative;
+   margin-bottom: 80px;
+
+
+   &:nth-child(even) {
+      .product-article {
+         &__figure {
+            &--vertical {               
+               margin-left: 52%;
+            }
+         }
+      }
+   }
+
+   &:nth-child(odd) {
+      .product-article {
+         &__figure {
+            &--vertical {               
+               margin-right: 52%;
+            }
+         }
+      }
+   }
+
+   img {
+      max-height: $article-img-height;
+      width: auto;
+   }
+   
+   &__caption {
+      @include position(absolute, $bottom: -0.75rem);
+      z-index: 3;      
+
+      h2 {
+         font-size: $article-font;
+         margin: 0;
+
+         @include small {
+            font-size: $article-font-sm;
+         }
+      }
+
+      @include small {
+         bottom: -0.5rem;         
+      }
+   }
+
+   @include small {
+      margin-bottom: 40px;      
+   }
+   
+}

@@ -1,0 +1,113 @@
+$table-padding: 1rem 0;
+$table-item-border: 0.01rem solid $primary;
+$table-thumb-height: 10rem;
+$table-thead-font-size: 15px;
+
+.woocommerce-cart-form {
+   margin-bottom: 2rem;
+
+   &__contents {
+
+      thead {
+         th {
+            border-bottom: $table-item-border;
+            font-size: $table-thead-font-size;
+            padding: $table-padding;
+            text-align: left;
+            text-transform: uppercase;
+         }
+         @include small {
+            display: none;
+         }
+      }
+      width: 100%;
+   }
+
+   &__cart-item {      
+     
+      td {
+         border-bottom: $table-item-border;
+         padding: $table-padding;         
+
+         @include small {            
+            @include flex(center, space-between);
+            flex-wrap: wrap;
+            text-align: right;
+            width: 100%;
+
+            &:before{
+               content: attr(data-title);
+            }
+         }         
+      }
+
+      @include small {
+         display: block;
+      }
+
+      &.cart_item {
+      
+         .product-thumbnail {
+            img {
+               height: $table-thumb-height;
+               width: auto;
+            }
+
+            @include small {
+               &:before {
+                  display: none;
+               }
+            }
+         }            
+      }   
+   }
+}
+
+.cart-collaterals {
+   @include flex(center, flex-end);
+   width: 100%;
+
+   .cart_totals {
+      width: 40%;
+
+      h2 {
+         display: none;
+      }
+
+      .wc-proceed-to-checkout {
+         text-align: right;
+      }
+
+      @include small {
+         width: 100%;
+      }
+   }
+}
+
+.shop_table {
+   border: border-collapse;
+   margin-bottom: 2rem;
+   width: 100%;
+
+   th, td {
+      padding: $table-padding;
+   }
+   tr{
+      th{
+         text-align: left;
+      }
+      td{
+         border-bottom: $table-item-border;
+         padding: $table-padding;
+      }
+   }
+
+   .actions {
+      margin-bottom: 40px;
+      border: none;
+      text-align: right;
+      .button {
+         @extend .button-small;
+      }
+   }
+}

@@ -1,0 +1,124 @@
+// $footer-margin: 5rem 0;
+// $footer-margin-sm: 2rem 0;
+// $footer-item-margin: 0 10rem 0 0;
+
+// .footer {
+//    border: 3px solid blue;
+//    margin: $footer-margin;
+   
+//    @include small {
+//       margin: $footer-margin-sm;
+//    }
+
+//    * {
+//       font-size: $font-size-base-sm;
+//    }
+   
+//    &__container {
+//       display: flex;      
+//       flex-wrap: wrap;
+
+//       @include small {
+//          justify-content: space-between;
+//       }
+//    }
+
+//    &__item {
+//       margin: $footer-item-margin;
+
+//       * {
+//          text-transform: uppercase;
+//       }
+   
+//       @include small {
+//          margin: 0;
+//          width: 60%;                 
+//       }
+
+//       &--secondary {
+//          @include small {
+//             margin: 0;
+//             width: 30%;
+//          }
+//       }
+
+//       &--full {
+//          display: flex;
+//          align-items: center;
+
+//          @include small {
+//             margin: 2rem 0;
+//             width: 100%;
+//          }
+//       }
+//    }
+
+
+//    .menu {
+//       li {
+//          margin-bottom: 3px;
+//       }
+//    }
+// }
+
+// $newsletter-boder: 1px solid $primary;
+
+// .newsletter {
+
+//    &__content {
+//       display: flex;
+
+//       @include small {
+//          flex-direction: column;
+//       }
+//    }
+
+//    &__input {
+//       border-radius: 0;
+//       border: none;
+//       box-shadow: none;
+//       border-bottom: $newsletter-boder;
+//       margin-left: 1rem;
+//       min-width: 250px;
+//       text-transform: initial;
+      
+
+//       &:hover, &:focus {
+//          outline: 0;
+//       }
+
+//       @include small {
+//          margin: 0;         
+//       }
+//    }
+// }
+
+.footer {
+  // border: 2px solid orange;
+
+   .menu {
+     // border: 2px solid blue;
+      margin: 4rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+
+      &-item {
+        &.current-menu-item {
+           border-bottom: 1px solid $primary;
+        }
+      }
+    }
+
+   &__copy {
+     // border: 2px solid violet;
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+      justify-content: center;
+
+      * {
+         color: $grey;
+      }
+   }
+}

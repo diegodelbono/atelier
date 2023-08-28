@@ -1,0 +1,76 @@
+// Transition
+@mixin transition($value){
+	transition: 		$value;
+    -moz-transition: 	$value;
+    -ms-transition: 	$value;
+    -webkit-transition: $value;    
+}
+
+// Position
+@mixin position(
+    $position, 
+    $top: null, 
+    $right: null, 
+    $bottom: null, 
+    $left: null, 
+    $width: null, 
+    $height: null) {
+        
+	position: 	$position;
+	top: 		$top;
+	right: 		$right;
+	bottom: 	$bottom;
+	left: 		$left;
+	height: 	$height;
+	width: 		$width;
+}
+
+// Flex
+@mixin flex($x, $y){
+    display: flex;
+    align-items: $x;
+    justify-content: $y;
+}
+
+// Breakpoints
+@mixin small {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+// Icons
+@mixin mask($value){
+	mask: 			url($value) no-repeat 50% 50%;
+    -moz-mask: 		url($value) no-repeat 50% 50%;
+    -ms-mask: 		url($value) no-repeat 50% 50%;
+    -webkit-mask: 	url($value) no-repeat 50% 50%;
+}
+
+// Transform
+@mixin transform($value){
+	transform: 			$value;
+    -moz-transform: 	$value;
+    -ms-transform: 		$value;
+    -webkit-transform:  $value;    
+}
+
+// Transform
+@mixin transform-origin($value){
+	transform-origin: 			$value;
+    -moz-transform-origin: 		$value;
+    -ms-transform-origin: 		$value;
+    -webkit-transform-origin: 	$value;    
+}

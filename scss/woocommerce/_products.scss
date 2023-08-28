@@ -1,0 +1,55 @@
+.products {
+   //border: 2px solid red;
+   display: grid;
+   gap: 2rem;
+   //grid-auto-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+
+   @include small {
+     // border: 3px solid blue;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   &.columns-3{
+      grid-template-columns: repeat(3, 1fr);
+   }
+   // display: flex;
+   // flex-wrap: wrap;
+   // margin: 0 -10px;
+
+   // @include small {}
+
+   // li {
+   //    margin-bottom: 20px;
+   //    padding: 0 10px;
+   //    width: 25%;
+   //    @include small {}
+
+   //    &.layout {
+   //       &--landscape {
+   //          width: 50%;
+   //          @include small {
+   //             width: 100%;
+   //          }
+   //       }
+   //       &--portrait {
+   //          width: 25%;
+
+   //          @include small {
+   //             width: 50%;
+   //          }
+   //       }
+   //    }
+   // }
+}
+
+.related {
+   border-top: 1px solid $primary;
+   margin: 5rem 0;
+   padding: 5rem 0;
+
+   @include small {
+      margin: 1rem 0;
+      padding: 1rem 0;
+   }
+}

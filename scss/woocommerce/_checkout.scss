@@ -1,0 +1,30 @@
+.checkout-form {
+   margin: 0 (-$gutters);
+   display: flex;
+
+   @include small {
+      margin: 0;
+      flex-direction: column;
+   }
+
+   &__item {
+      padding: 0 $gutters;
+      flex: 1;
+
+      @include small {
+         padding: 0;
+      }
+   }
+}
+
+.woocommerce-checkout-payment {
+   background: #ebe9eb;
+   padding: 1rem;
+
+   label {
+      margin-bottom: 1rem;
+      align-items: center;
+      display: flex;
+      width: 100%;
+   }
+}

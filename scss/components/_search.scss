@@ -1,0 +1,23 @@
+$search-boder: 1px solid $primary;
+$search-font: $font-size-base-sm;
+
+.header {
+   .search {
+      display: none;
+      border-bottom: $search-boder;
+      
+      @include small {
+         @include position(absolute, $top: 1.25rem, $right: -2.75rem);
+      }
+
+      &__input {
+         background: transparent;
+         font-size: $search-font;
+
+         &:hover, &:focus {
+            border: none;
+            outline: 0;
+         }
+      }
+   }
+}

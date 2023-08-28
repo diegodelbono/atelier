@@ -1,0 +1,31 @@
+.projects {
+
+   &__list {
+      display: flex;
+      margin: 0 -20px;
+
+      @include small {
+         margin: 0 -10px;
+      }
+   }
+
+   &__item {   
+      padding: 0 20px;
+      margin-bottom: 2rem;
+      flex: 1;
+
+      img {
+         margin-bottom: 0.5rem;
+      }
+
+      @include small {
+         padding: 0 10px;
+      }
+   }
+   
+   h2, h3 {
+      font-size: $font-size-base-sm;
+      margin: 0;
+   }
+
+}

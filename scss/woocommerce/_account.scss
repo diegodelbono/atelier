@@ -1,0 +1,27 @@
+.woocommerce-MyAccount-navigation {
+   display: flex;
+   border-bottom: 1px solid $primary;   
+
+   ul {
+      display: flex;
+
+      li {
+         margin-right: 2rem;
+         padding: 1rem 0;
+      }
+   }
+}
+
+.woocommerce-MyAccount-content {
+   padding: 2rem 0;
+}
+
+
+.woocommerce-form-login {
+   margin: auto;
+   width: 50%;
+
+   @include small {
+      width: 100%;
+   }
+}

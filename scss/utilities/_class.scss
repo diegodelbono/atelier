@@ -1,0 +1,26 @@
+// Class
+
+.img-responsive,
+img {
+   display: block;
+   height: auto;
+   max-width: 100%;
+   width: 100%;
+}
+
+.show--small {
+   display: none !important;
+   @include small {
+      display: block !important;
+   }
+}
+
+.hide--small {
+   @include small {
+      display: none !important;
+   }
+}
+
+.text-right {
+   right: 0;
+}
